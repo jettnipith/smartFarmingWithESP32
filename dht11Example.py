@@ -7,7 +7,7 @@ import machine
 import time
 
 # Setup sensor
-sensor = dht.DHT11(machine.Pin(2))  # Replace with the GPIO pin you connected the sensor to
+sensor = dht.DHT11(machine.Pin(23))  # Replace with the GPIO pin you connected the sensor to
 
 # Main loop
 try:
