@@ -6,7 +6,7 @@ from machine import Pin, PWM
 import time
 
 # Setup servo motor
-servo_pin = Pin(13, Pin.OUT)  # Replace with the actual PWM pin you connected the servo to
+servo_pin = Pin(32, Pin.OUT)  # Replace with the actual PWM pin you connected the servo to
 servo_pwm = PWM(servo_pin, freq=50)  # Set PWM frequency to 50 Hz (standard for servo motors)
 
 # Function to move the servo to a specific angle
