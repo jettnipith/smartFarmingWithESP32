@@ -11,7 +11,7 @@ servo_pwm = PWM(servo_pin, freq=50)  # Set PWM frequency to 50 Hz (standard for 
 
 # Function to move the servo to a specific angle
 def move_servo(angle):
-    duty_cycle = int(((angle / 180) * 1000) + 500)  # Convert angle to duty cycle
+    duty_cycle = int(((angle / 180) * 1023))  # Convert angle to duty cycle
     servo_pwm.duty(duty_cycle)
 
 # Main loop
