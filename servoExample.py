@@ -15,17 +15,20 @@ def move_servo(angle):
     servo_pwm.duty(duty_cycle)
 
 # Main loop
-while True:
-    try:
-        # Move the servo to different angles
-        move_servo(0)    # Move to 0 degrees
-        time.sleep(1)
-        move_servo(90)   # Move to 90 degrees
-        time.sleep(1)
-        move_servo(180)  # Move to 180 degrees
-        time.sleep(1)
-
-    except Exception as e:
-        print(f'Error controlling servo motor: {e}')
-
-    time.sleep(2)  # Adjust the delay based on your application requirements
+try:
+    while True:
+        try:
+            # Move the servo to different angles
+            move_servo(0)    # Move to 0 degrees
+            time.sleep(1)
+            move_servo(90)   # Move to 90 degrees
+            time.sleep(1)
+            move_servo(180)  # Move to 180 degrees
+            time.sleep(1)
+    
+        except Exception as e:
+            print(f'Error controlling servo motor: {e}')
+    
+        time.sleep(2)  # Adjust the delay based on your application requirements
+except KeyboardInterupt:
+    pass
