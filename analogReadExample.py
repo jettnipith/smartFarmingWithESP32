@@ -7,7 +7,7 @@ import time
 
 
 # Setup analog pin
-adc = ADC(Pin(34))  # Replace with the actual analog pin you connected the sensor to
+adc = ADC(Pin(26))  # Replace with the actual analog pin you connected the sensor to
 
 # Main loop
 try:
