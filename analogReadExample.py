@@ -1,3 +1,7 @@
+"""
+Connect the photoresistor to one of the analog pins on the ESP32 (e.g., GPIO 34). Connect a resistor in series with the photoresistor to create a voltage divider.
+"""
+
 from machine import ADC, Pin
 import time
 
