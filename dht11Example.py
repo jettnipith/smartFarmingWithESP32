@@ -24,6 +24,6 @@ try:
         except Exception as e:
             print(f'Error reading sensor data: {e}')
     
-        time.sleep(2)  # Adjust the delay based on your application requirements
+        time.sleep(1)  # Adjust the delay based on your application requirements
 except KeyboardInterupt:
     pass
