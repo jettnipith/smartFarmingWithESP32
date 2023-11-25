@@ -1,3 +1,7 @@
+"""
+Assuming you are using a simple sensor like a temperature and humidity sensor (e.g., DHT11) connected to the GPIO pins:
+"""
+
 import dht
 import machine
 import time
