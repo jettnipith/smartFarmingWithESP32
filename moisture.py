@@ -17,10 +17,15 @@ def read_moisture():
 
     return moisture_value, moisture_percentage
 
-while True:
-    moisture_value, moisture_percentage = read_moisture()
+try:
+    while True:
+        moisture_value, moisture_percentage = read_moisture()
+    
+        print("Moisture Value:", moisture_value)
+        print("Moisture Percentage:", moisture_percentage, "%")
+    
+        sleep(1)  # You can adjust the sleep time according to your needs
 
-    print("Moisture Value:", moisture_value)
-    print("Moisture Percentage:", moisture_percentage, "%")
+except KeyboardInterupt:
+    pass
 
-    sleep(1)  # You can adjust the sleep time according to your needs
