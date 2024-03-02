@@ -39,18 +39,16 @@ def delete_record(row):
     else:
         return "Error: Unable to delete record"
 
-# Example usage
-# Replace the base_url with your deployed web app URL
-base_url = "YOUR_SCRIPT_WEB_APP_URL"
+# Example usage-----
 
 # Get records
-print(get_records())
+#print(get_records())
 
 # Create record
-print(create_record("New Book", "New Author", "1234567890"))
+#print(create_record("New Book", "New Author", "1234567890"))
 
 # Update record
-print(update_record(2, "Updated Book", "Updated Author", "0987654321"))
+#print(update_record(2, "Updated Book", "Updated Author", "0987654321"))
 
 # Delete record
-print(delete_record(2))
+#print(delete_record(2))
