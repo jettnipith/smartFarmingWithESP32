@@ -7,7 +7,7 @@ import time
 
 
 # Setup analog pin
-adc = ADC(Pin(26))  # Replace with the actual analog pin you connected the sensor to
+adc = ADC(Pin(39))  # Replace with the actual analog pin you connected the sensor to
 
 
 def moisture():
