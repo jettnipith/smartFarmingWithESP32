@@ -13,6 +13,7 @@ oled_height = 32
 oled = ssd1306.SSD1306_I2C(oled_width, oled_height, i2c)
 
 def show_3_line(line1, line2, line3):
+    oled.fill(0)
     oled.text(line1, 0, 0)
     oled.text(line2, 0, 10)
     oled.text(line3, 0, 20)
