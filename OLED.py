@@ -12,8 +12,8 @@ oled_width = 128
 oled_height = 32
 oled = ssd1306.SSD1306_I2C(oled_width, oled_height, i2c)
 
-oled.text('Rail online!', 0, 0)
-oled.text('Esp32 || OLED 06 ', 0, 10)
-oled.text('blog.kls.ac.th', 0, 20)
-        
-oled.show()
+def show_3_line(line1, line2, line3):
+    oled.text(line1, 0, 0)
+    oled.text(line2, 0, 10)
+    oled.text(line3, 0, 20)
+    oled.show()
