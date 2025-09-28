@@ -22,7 +22,7 @@ SET_CHARGE_PUMP     = const(0x8d)
 
 
 class SSD1306:
-  def __init__(self, width, height, external_vcc):
+    def __init__(self, width, height, external_vcc):
         self.width = width
         self.height = height
         self.external_vcc = external_vcc
@@ -32,7 +32,7 @@ class SSD1306:
         # between I2C and SPI implementations (I2C needs an extra byte).
         self.poweron()
         self.init_display()
-  def init_display(self):
+    def init_display(self):
         for cmd in (
             SET_DISP | 0x00, # off
             # address setting
