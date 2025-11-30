@@ -44,13 +44,13 @@ while True:
     air_temp = air['temperature']
     air_humid = air['humidity']
     if moisture_percent > 60:
-          soil_status = "too wet"
+          soil_status = "toowet"
           act.relayOff(1)
     elif moisture_percent > 40:   
           soil_status = "normal"
           act.relayOff(1)
     else:
-          soil_status = "too dry"
+          soil_status = "toodry"
           act.relayOn(1)
 
     #ส่งขึ้น google sheet
