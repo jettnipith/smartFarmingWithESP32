@@ -29,7 +29,7 @@ connect_wifi()
 def send_to_sheet(moisture_percent, soil_status, air_temp, air_humid):
     try:
         url = (endpoint + f"?moisture={moisture_percent}&status={soil_status}&temp={air_temp}&humid={air_humid}")
-        r = urequest.get(url)
+        r = urequests.get(url)
         r.close()
         print("sent to google sheet")
     except Exception as e:
